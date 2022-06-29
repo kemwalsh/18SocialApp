@@ -5,7 +5,7 @@ const {
 } = require('../../controllers/thoughtController');
 
 
-// /api/users/:userId
-router.route('/:userId').get(getAllThoughts).post(createThought);
+// /api/users/:userId/thoughts
+router.route('/:userId/thoughts').get(getAllThoughts).post(createThought);
 
 module.exports = router;
