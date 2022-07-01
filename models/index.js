@@ -1,6 +1,6 @@
-const User = require('./friends');
-const Reaction = require('./reactions');
-const Thought = require('./thoughts');
-const Friend = require('./friends');
+const User = require('./User');
+const Reaction = require('./Reaction');
+const Thought = require('./Thought');
+const Friend = require('./Friend');
 
 module.exports = { User, Reaction, Thought, Friend };

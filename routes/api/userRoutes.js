@@ -4,13 +4,11 @@ const {
   findUserById,
   updateUser,
   createUser,
-  createSecondUser,
-  createThirdUser,
   deleteUser,
 } = require('../../controllers/userController');
 
 // /api/users
-router.route('/').get(findAllUsers).post(createUser).post(createSecondUser).post(createThirdUser);
+router.route('/').get(findAllUsers).post(createUser);
 
 // /api/users/:userId
 router.route('/:userId').get(findUserById).delete(deleteUser).put(updateUser);
