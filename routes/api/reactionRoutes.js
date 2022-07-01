@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const {
-  createReaction,
-  deleteReaction,
+    createReaction,
+    deleteReaction,
 } = require('../../controllers/reactionController');
 
 
