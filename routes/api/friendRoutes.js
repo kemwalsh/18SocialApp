@@ -5,7 +5,7 @@ const {
 } = require('../../controllers/friendController');
 
 
-// /api/friends/:userId
-router.route('/:userId').post(addFriend).delete(removeFriend);
+// /api/users/:userId/friends/:friendId
+router.route('/:userId/friends/:friendId').post(addFriend).delete(removeFriend);
 
 module.exports = router;
