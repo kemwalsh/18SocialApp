@@ -30,7 +30,9 @@ const userSchema = new Schema({
         getters: true,
         virtuals: true,
     },
+    id: false,
 });
+// Return friend count
 userSchema.virtual('friendCount').get(function () {
     return this.friends.length
 });
