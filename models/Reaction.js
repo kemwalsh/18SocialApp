@@ -19,12 +19,10 @@ const reactionSchema = new Schema({
         required: true,
     },
     createdAt: {
-        type: String,
         type: Date,
         default: Date.now(),
         // Use getter method to format the timestamp on query?  
     },
-    reactions: [reactionSchema],
 }, {
     toJSON: {
         getters: true,
@@ -33,4 +31,4 @@ const reactionSchema = new Schema({
     id: false,
 });
 
-module.exports = Reaction;
+module.exports = reactionSchema;
